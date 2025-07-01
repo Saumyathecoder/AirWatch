@@ -44,6 +44,7 @@ with open(model_path, 'rb') as file:
 
 
 app = Flask(__name__)
+app.secret_key = "d3f5a7b9c3e8f2a4b1d7e6c4a9f3b2e1"
 app.secret_key = os.environ.get('FLASK_SECRET_KEY')# Needed for session
 
 @app.route('/')
